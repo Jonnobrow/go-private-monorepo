@@ -1,4 +1,4 @@
-# Go Private [Monorepo](Monorepo)
+# Go Private Monorepo
 
 This repository is a test/guide for importing libraries from private monorepos.
 
