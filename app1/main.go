@@ -7,5 +7,6 @@ import (
 
 func main() {
     lib1.OutputName("Jonathan")
+    lib1.OutputJob("Associate DevOps Engineer")
     lib2.OutputAge(22)
 }

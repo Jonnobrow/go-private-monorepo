@@ -34,3 +34,18 @@ To setup SSH you can add the following snippet to you git configuration
 [url "ssh://git@github.com:"]
     insteadOf = https://github.com/
 ```
+
+## The `replace` block in `go.mod`
+
+The replace block allows you to tell the compiler where modules live locally.
+For this project for example I can tell the compiler to traverse up a directory
+and into `lib1` for the `lib1` package and something similar for `lib2`. 
+
+The block below shows how to do this in your `go.mod` file.
+
+```go
+replace (
+    github.com/jonnobrow/go-private-monorepo/lib1 => ../lib1
+    github.com/jonnobrow/go-private-monorepo/nested/lib2 => ../nested/lib2
+)
+```
