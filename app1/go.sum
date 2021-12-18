@@ -1,0 +1,4 @@
+github.com/jonnobrow/go-private-monorepo/lib1 v0.0.0-20211218102920-c95e806e89e1 h1:xck6xwWahtklLJu9gR8h8L7HE+mk97SGfOolFkBR8wA=
+github.com/jonnobrow/go-private-monorepo/lib1 v0.0.0-20211218102920-c95e806e89e1/go.mod h1:695vQqi/1NI9TNTJrHqjN5sAdpAc6bqwneDetHTSxDA=
+github.com/jonnobrow/go-private-monorepo/nested/lib2 v0.0.0-20211218102920-c95e806e89e1 h1:Czzoy2kZorOwuSG3cn9Wrg2ZB+23qMKb7AVYzxU3zt0=
+github.com/jonnobrow/go-private-monorepo/nested/lib2 v0.0.0-20211218102920-c95e806e89e1/go.mod h1:WNfDfMt7kY+RbrqxSsKbr5Sxb83V0IS1fcmklobv4fU=
