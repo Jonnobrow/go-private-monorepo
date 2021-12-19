@@ -3,7 +3,8 @@
 This repository is a test/guide for importing libraries from private monorepos.
 
 ## Project Layout
-```
+
+```text
 .
 ├── app1        # The main app that imports the libraries
 ├── lib1        # The first library, adjacent to app1
@@ -21,13 +22,13 @@ are not publicly accessible. More info on this can be found with
 - You can also set for an organisation/user `GOPRIVATE=github.com/jonnobrow/*`
 
 Setting this will mean modules with a full path matching `GOPRIVATE` will be
-treated as private and Go will require authentication to access them. 
+treated as private and Go will require authentication to access them.
 
 ## Git Setup
 
 By default Go uses Git with HTTPS to get the modules from the private repository.
 
-To setup SSH you can add the following snippet to you git configuration 
+To setup SSH you can add the following snippet to you git configuration
 (`~/.gitconfig` or `~/.config/git/config`).
 
 ```ini
@@ -39,7 +40,7 @@ To setup SSH you can add the following snippet to you git configuration
 
 The replace block allows you to tell the compiler where modules live locally.
 For this project for example I can tell the compiler to traverse up a directory
-and into `lib1` for the `lib1` package and something similar for `lib2`. 
+and into `lib1` for the `lib1` package and something similar for `lib2`.
 
 The block below shows how to do this in your `go.mod` file.
 
